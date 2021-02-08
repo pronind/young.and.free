@@ -19,7 +19,7 @@ input[type="radio"].visually-hidden {
 
 body {
     color: $color-black1;
-    font-family: Roboto;
+    font-family: Inter, Roboto;
     background-color: $color-white1;
     font-size: 14px;
     line-height: normal;
@@ -54,8 +54,8 @@ ul {
 .header {
     width: 100%;
     box-sizing: border-box;
-    padding: 15px 20px;
-    margin-bottom: 70px;
+    padding: 20px;
+    margin-bottom: 65px;
 }
 
 .header__container {
@@ -65,10 +65,10 @@ ul {
 }
 
 .header__logo {
-    color: $color-black1;
-    font-weight: bold;
-    font-size: 25px;
-    line-height: 30px;
+    display: flex;
+    align-items: center;
+    width: 163px;
+    height: 30px;
 }
 
 .header__nav-container {
@@ -192,11 +192,8 @@ ul {
 }
 
 .footer__logo {
-    color: $color-white1;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
+    width: 163px;
+    height: 30px;
     margin-bottom: 70px;
 }
 
@@ -260,34 +257,42 @@ ul {
 
     .header {
         padding: 45px 40px;
-        margin-bottom: 160px;
+        margin-bottom: 140px;
     }
 
     .header__button-menu {
         display: none;
     }
+
+    .header__logo-wrapper {
+        width: calc(100%/3);
+    }
+
     .header__nav-container {
-        display: block;
+        display: flex;
+        flex-grow: 1;
     }
 
     .header__nav {
+        width: 100%;
         display: flex;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
     }
 
     .header__nav-list {
+        width: 50%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
-        margin-right: 60px;
-
+        margin-right: 30px;
     }
 
     .header__nav-item {
         padding: 0;
         margin: 0;
-        margin-right: 60px;
+        margin-right: 30px;
     }
 
     .header__nav-item:last-child {
@@ -298,11 +303,11 @@ ul {
         font-style: normal;
         font-weight: normal;
         font-size: 20px;
+        color: $color-black1;
     }
 
     .header__nav-link {
         padding: 10px 15px;
-
         box-sizing: border-box;
         color: $color-white1;
         background-color: $color-blue1;
@@ -320,62 +325,65 @@ ul {
         align-items: center;
         padding: 0 40px;
     }
-    
+
     .block1 {
         max-width: 1484px;
         margin-bottom: 100px;
     }
-    
+
     .block1__text {
         max-width: 1082px;
         font-size: 72px;
         margin-bottom: 140px;
     }
-    
+
     .block1__img-container {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-    
+
     .block1__img-column1 {
         width: 50%;
         padding-right: 10px;
     }
+
     .block1__img-column2 {
         width: 50%;
         padding-left: 10px;
     }
+
     .block1__img-wrapper {
         padding: 0;
         margin: 0;
         margin-bottom: 50px;
     }
-    
+
     .block1__img {
         margin-bottom: 20px;
     }
-    
+
     .block1__img-name {
         font-size: 30px;
     }
+
     .block2 {
         width: 100%;
         max-width: 1484px;
     }
-    
+
     .block2__headline {
         font-size: 22px;
     }
-    
+
     .block2__list {
         flex-direction: row;
     }
-    
+
     .block2__list li {
         font-size: 36px;
     }
-    
+
     .footer {
         display: flex;
         flex-direction: column;
@@ -383,32 +391,31 @@ ul {
         box-sizing: border-box;
         padding: 70px 40px 260px 40px;
     }
-    
+
     .footer__container {
         max-width: 1484px;
     }
-    
+
     .footer__logo {
-        font-size: 32px;
         margin-bottom: 95px;
     }
-    
+
     .footer__contacts {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         margin-bottom: 70px;
     }
-    
+
     .contacts__mail {
         font-size: 64px;
         margin-bottom: 120px;
     }
-    
+
     .contacts__social-list {
         justify-content: flex-start;
     }
-    
+
     .contacts__social-item {
         min-width: 90px;
         text-align: start;
@@ -416,17 +423,18 @@ ul {
         margin: 0;
         margin-right: 60px;
     }
-    
+
     .contacts__social-item a {
         font-size: 20px;
     }
-    
+
     .footer__link {
         width: 420px;
-        min-height: 146px;;
+        min-height: 146px;
+        ;
         padding: 45px;
     }
-    
+
 
 
 
