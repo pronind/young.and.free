@@ -49,22 +49,23 @@ ul {
 }
 
 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
   min-width: 414px;
   width: 100%;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 25px 20px;
 }
 
 .header__container {
+  position: relative;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .header__logo {
+  position: fixed;
+  top: 25px;
   display: flex;
   align-items: center;
   width: 163px;
@@ -108,7 +109,7 @@ ul {
 
 .block1 {
   padding: 0 20px;
-  margin-top: 195px;
+  margin-top: 65px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -116,6 +117,7 @@ ul {
 }
 
 .block1__text {
+  margin: 0;
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
@@ -148,7 +150,7 @@ ul {
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
-  line-height: 27px;
+  line-height: 150%;
 }
 
 .block2 {
@@ -269,20 +271,98 @@ ul {
 }
 
 .page__project {
+  box-sizing: border-box;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   margin-bottom: 80px;
+  margin-top: -131px;
 }
 
 .project__big-picture {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.project__headline {
+  padding: 0 20px;
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 150%;
+  margin-bottom: 25px;
+}
+
+.project__task {
+  margin-bottom: 25px;
+  padding: 0 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 150%;
+}
+
+.project__task-headline {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  opacity: 0.5;
+  margin: 0 0 10px 0;
+}
+
+.project__task-text {
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 150%;
+}
+
+.project__paragraph {
+  margin-bottom: 25px;
+  padding: 0 20px;
+}
+
+.project__paragraph-headline {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 150%;
+  margin-bottom: 25px;
+}
+
+.project__paragraph-text {
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 150%;
 }
 
 .project__quote-wrapper {
   width: 100%;
+  background-color: #1C1C1F;
+}
+
+.project__quote {
+  padding: 20px 20px;
+}
+
+.project__quote-text {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 150%;
+  color: #ffffff;
 }
 
 .page__next {
@@ -291,13 +371,38 @@ ul {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
+}
+
+.next__container {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.next__subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  opacity: 0.5;
+  margin: 0 0 10px 0;
+  color: #000000;
+}
+
+.next__headline {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 150%;
+  margin-bottom: 25px;
+  color: #000000;
 }
 
 @media (min-width: 768px) {
   .header {
     padding: 45px 40px;
-    margin-bottom: 140px;
   }
 
   .header__container {
@@ -311,6 +416,11 @@ ul {
 
   .header__logo-wrapper {
     width: calc(100%/3);
+  }
+
+  .header__logo {
+    top: 45px;
+    height: 41px;
   }
 
   .header__nav-container {
@@ -372,6 +482,7 @@ ul {
     padding: 0 40px;
     max-width: 1484px;
     margin-bottom: 100px;
+    margin-top: 140px;
   }
 
   .block1__text {
@@ -511,17 +622,12 @@ ul {
 
   .project__big-picture {
     width: 100%;
-    display: flex;
-    justify-content: center;
     margin-bottom: 75px;
   }
 
   .project__headline {
-    padding: 0;
     margin: 0;
     max-width: 1024px;
-    font-style: normal;
-    font-weight: normal;
     font-size: 72px;
     line-height: 87px;
     margin-bottom: 40px;
@@ -535,16 +641,7 @@ ul {
     margin-bottom: 60px;
   }
 
-  .project__task-headline {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    opacity: 0.5;
-    margin-bottom: 0 0 10px 0;
-  }
-
   .project__task-text {
-    padding: 0;
     margin: 0;
     font-style: normal;
     font-weight: normal;
@@ -588,7 +685,7 @@ ul {
   }
 
   .project__quote {
-    padding: 80px 0;
+    padding: 80px 20px;
     max-width: 1024px;
   }
 
@@ -604,20 +701,12 @@ ul {
   }
 
   .page__next {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 80px;
   }
 
   .next__container {
     max-width: 1024px;
     margin-bottom: 190px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
   }
 
