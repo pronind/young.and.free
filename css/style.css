@@ -151,9 +151,9 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 80px;
   -webkit-animation-name: slideUp;
           animation-name: slideUp;
-  margin-bottom: 80px;
   -webkit-animation-duration: 0.3s;
           animation-duration: 0.3s;
 }
@@ -177,6 +177,10 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-animation-name: slideUp;
+          animation-name: slideUp;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
 }
 
 .block1__img-column {

@@ -121,8 +121,8 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  animation-name: slideUp;
   margin-bottom: 80px;
+  animation-name: slideUp;
   animation-duration: 0.3s;
 }
 
@@ -138,6 +138,8 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  animation-name: slideUp;
+  animation-duration: 0.3s;
 }
 
 .block1__img-column {
