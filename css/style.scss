@@ -1,4 +1,7 @@
-
+@keyframes slideUp {
+    0%   { margin: 200px 0 0 0; }
+    100% { margin: 0 0 0 0; }
+}
 
 $color-black1: #000000;
 $color-black2: #1C1C1F;
@@ -123,7 +126,9 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    animation-name: slideUp;
     margin-bottom: 80px;
+    animation-duration: 0.3s;
 }
 
 .block1__text {
@@ -132,14 +137,13 @@ ul {
     font-style: normal;
     font-weight: normal;
     font-size: 32px;
-    animation-duration: 1s;
 }
 
 .block1__img-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    animation-duration: 2s;
+    
 }
 
 .block1__img-column {
