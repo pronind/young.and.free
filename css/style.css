@@ -138,9 +138,12 @@ ul {
 
 .block1__text {
   margin: 0;
+  margin-bottom: 74px;
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .block1__img-container {
@@ -154,6 +157,8 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 .block1__img-column {

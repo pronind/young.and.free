@@ -1,3 +1,5 @@
+
+
 $color-black1: #000000;
 $color-black2: #1C1C1F;
 $color-white1: #ffffff;
@@ -126,15 +128,18 @@ ul {
 
 .block1__text {
     margin: 0;
+    margin-bottom: 74px;
     font-style: normal;
     font-weight: normal;
     font-size: 32px;
+    animation-duration: 1s;
 }
 
 .block1__img-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    animation-duration: 2s;
 }
 
 .block1__img-column {
