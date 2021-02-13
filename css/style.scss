@@ -1,6 +1,11 @@
 @keyframes slideUp {
-    0%   { margin: 200px 0 0 0; }
-    100% { margin: 0 0 0 0; }
+    0% {
+        margin: 200px 0 0 0;
+    }
+
+    100% {
+        margin: 0 0 0 0;
+    }
 }
 
 $color-black1: #000000;
@@ -75,7 +80,6 @@ ul {
     align-items: center;
 }
 
-
 .header__logo {
     position: fixed;
     top: 25px;
@@ -127,8 +131,9 @@ ul {
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 80px;
-    animation-name: slideUp;
-    animation-duration: 0.3s;
+
+    // animation-name: slideUp;
+    // animation-duration: 0.3s;
 }
 
 .block1__text {
@@ -143,8 +148,9 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    animation-name: slideUp;
-    animation-duration: 0.3s;
+
+    // animation-name: slideUp;
+    // animation-duration: 0.3s;
 }
 
 .block1__img-column {
@@ -288,9 +294,7 @@ ul {
     justify-content: center;
 }
 
-
 // page-project
-
 .page__project {
     box-sizing: border-box;
     width: 100%;
@@ -386,7 +390,8 @@ ul {
     color: $color-white1;
 }
 
-.project__quote-logo {}
+.project__quote-logo {
+}
 
 .page__next {
     width: 100%;
@@ -423,11 +428,10 @@ ul {
     color: $color-black1;
 }
 
-.next__picture {}
+.next__picture {
+}
 
-
-@media(min-width: 768px) {
-
+@media (min-width: 768px) {
     .header {
         padding: 45px 40px;
     }
@@ -498,8 +502,6 @@ ul {
         font-size: 18px;
         border-radius: 50px;
     }
-
-
 
     .main {
         display: flex;
@@ -588,7 +590,7 @@ ul {
         flex-direction: column;
         align-items: center;
         box-sizing: border-box;
-        padding: 70px 40px 260px 40px;
+        padding: 70px 40px 160px 40px;
     }
 
     .footer__container {
@@ -597,7 +599,6 @@ ul {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-
     }
 
     .footer__logo {
@@ -642,7 +643,6 @@ ul {
     }
 
     // page-project
-
     .page__project {
         width: 100%;
         display: flex;
@@ -672,7 +672,6 @@ ul {
         max-width: 1024px;
         margin-bottom: 60px;
     }
-
 
     .project__task-text {
         margin: 0;
@@ -733,7 +732,8 @@ ul {
         color: $color-white1;
     }
 
-    .project__quote-logo {}
+    .project__quote-logo {
+    }
 
     .page__next {
         margin-bottom: 80px;
@@ -767,10 +767,6 @@ ul {
         text-align: center;
     }
 
-    .next__picture {}
-
-
-
-
-
+    .next__picture {
+    }
 }

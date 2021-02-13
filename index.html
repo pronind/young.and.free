@@ -2,25 +2,22 @@
 <html lang="ru">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Young and Free</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="">
+    
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="font/inter.css" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
 
 <body>
     <header class="header">
-        <div class="header__container">
-            <div class="header__logo-wrapper"><a href="" class="header__logo"><img src="./img/logo.svg" width="163"
-                        height="30" alt="logo"></a></div>
+        <div class="header__container" data-aos="fade" data-aos-delay="500" data-aos-duration="700">
+            <div class="header__logo-wrapper"><a href="" class="header__logo"><img src="./img/logo.svg" width="163" height="30" alt="logo"></a></div>
             <div class="header__nav-container">
                 <nav class="header__nav">
                     <ul class="header__nav-list">
@@ -36,40 +33,35 @@
     </header>
     <main class="main">
         <h1 class="visually-hidden">Young and Free</h1>
-        <section class="block1 wow">
+        <section class="block1">
             <h2 class="visually-hidden"></h2>
-            <p class="block1__text">Craft, Impact, & Soul. Interesting Things. Generating ideas, building products, and
+            <p class="block1__text" data-aos="fade" data-aos-duration="1000">Craft, Impact, & Soul. Interesting Things. Generating ideas, building products, and
                 accelerating growth</p>
-            <div class="block1__img-container wow">
+            <div class="block1__img-container">
                 <div class="block1__img-column block1__img-column1">
-                    <figure class="block1__img-wrapper"><img src="./img/image 15.png" class="block1__img" width="320"
-                            height="" alt="425">
+                    <figure data-aos="fade-up" data-aos-offset="200" class="block1__img-wrapper "><img src="./img/image 15.png" class="block1__img" width="320" height="" alt="425">
                         <figcaption class="block1__img-name">Лендинг «ГлобалВан»</figcaption>
-                        </figcaption>
+                        
                     </figure>
-                    <figure class="block1__img-wrapper"><img src="./img/image 11.png" class="block1__img" width="320"
-                            height="240" alt="">
-                        <figcaption class="block1__img-name">Лендинг «ГлобалВан»</figcaption>
-                        </figcaption>
+                    <figure data-aos="fade-up" class="block1__img-wrapper "><img src="./img/image 11.png" class="block1__img" width="320" height="240" alt="">
+                        <figcaption class="block1__img-name">Тест анимации</figcaption>
+                        
                     </figure>
                 </div>
                 <div class="block1__img-column block1__img-column2">
-                    <figure class="block1__img-wrapper"><img src="./img/image 12.png" class="block1__img" width="320"
-                            height="240" alt="">
+                    <figure data-aos="fade-up" data-aos-offset="10" class="block1__img-wrapper"><img src="./img/image 12.png" class="block1__img" width="320" height="240" alt="">
                         <figcaption class="block1__img-name">Мобильное приложение “ТяниЗаЛУч”</figcaption>
                     </figure>
-                    <figure class="block1__img-wrapper"><img src="./img/image 14.png" class="block1__img" width="320"
-                            height="240" alt="">
+                    <figure data-aos="fade-up" class="block1__img-wrapper"><img src="./img/image 14.png" class="block1__img" width="320" height="240" alt="">
                         <figcaption class="block1__img-name">Мобильное приложение “ТяниЗаЛУч”</figcaption>
                     </figure>
-                    <figure class="block1__img-wrapper"><img src="./img/image 13.png" class="block1__img" width="320"
-                            height="240" alt="">
+                    <figure data-aos="fade-up" class="block1__img-wrapper wow"><img src="./img/image 13.png" class="block1__img" width="320" height="240" alt="">
                         <figcaption class="block1__img-name">Мобильное приложение “ТяниЗаЛУч”</figcaption>
                     </figure>
                 </div>
             </div>
         </section>
-        <section class="block2">
+        <section class="block2" data-aos="fade-up">
             <h2 class="visually-hidden"></h2>
             <p class="block2__headline">Мы разрабатываем</p>
             <ul class="block2__list">
@@ -99,10 +91,10 @@
             </div>
         </div>
     </footer>
-    <script src="js/wow.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        new WOW().init();
-       </script>
+      AOS.init();
+    </script>
 </body>
 
 </html>
