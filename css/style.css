@@ -1,18 +1,26 @@
 @-webkit-keyframes slideUp {
   0% {
-    margin: 200px 0 0 0;
+    -webkit-transform: translate(0, 200px);
+            transform: translate(0, 200px);
+    opacity: 0;
   }
   100% {
-    margin: 0 0 0 0;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1;
   }
 }
 
 @keyframes slideUp {
   0% {
-    margin: 200px 0 0 0;
+    -webkit-transform: translate(0, 200px);
+            transform: translate(0, 200px);
+    opacity: 0;
   }
   100% {
-    margin: 0 0 0 0;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1;
   }
 }
 
@@ -152,10 +160,6 @@ ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 80px;
-  -webkit-animation-name: slideUp;
-          animation-name: slideUp;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
 }
 
 .block1__text {
@@ -177,10 +181,6 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-animation-name: slideUp;
-          animation-name: slideUp;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
 }
 
 .block1__img-column {
@@ -194,6 +194,17 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.block1__img-column a {
+  -webkit-animation-name: slideUp;
+          animation-name: slideUp;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 .block1__img-wrapper {
@@ -212,6 +223,7 @@ ul {
   font-weight: normal;
   font-size: 22px;
   line-height: 150%;
+  color: #000000;
 }
 
 .block2 {
@@ -639,7 +651,10 @@ ul {
   }
   .block1 {
     padding: 0 40px;
-    max-width: 1484px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    max-width: 1604px;
     margin-bottom: 100px;
     margin-top: 140px;
   }
@@ -695,6 +710,7 @@ ul {
   }
   .block1__img {
     width: 100%;
+    max-width: 686px;
     margin-bottom: 20px;
   }
   .block1__img-name {
@@ -706,7 +722,7 @@ ul {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 100%;
-    max-width: 1484px;
+    max-width: 1604px;
   }
   .block2__headline {
     font-size: 22px;
@@ -744,7 +760,7 @@ ul {
   }
   .footer__container {
     width: 100%;
-    max-width: 1484px;
+    max-width: 1524px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
